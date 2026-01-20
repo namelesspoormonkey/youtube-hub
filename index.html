@@ -53,30 +53,34 @@
   </style>
 
   <script>
+    function openTab(url) {
+      window.open(url, "_blank", "noopener");
+    }
+
     document.addEventListener("keydown", (e) => {
       if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
 
       switch (e.key) {
         case "1":
-          location.href = "https://www.youtube.com/";
+          openTab("https://www.youtube.com/");
           break;
         case "2":
-          location.href = "https://www.youtube.com/feed/subscriptions";
+          openTab("https://www.youtube.com/feed/subscriptions");
           break;
         case "3":
-          location.href = "https://www.youtube.com/playlist?list=WL";
+          openTab("https://www.youtube.com/playlist?list=WL");
           break;
         case "4":
-          location.href = "https://www.youtube.com/@Torontobigface";
+          openTab("https://www.youtube.com/@Torontobigface");
           break;
         case "5":
-          location.href = "https://www.youtube.com/@laozhou77";
+          openTab("https://www.youtube.com/@laozhou77");
           break;
         case "6":
-          location.href = "https://www.youtube.com/@DK2.0";
+          openTab("https://www.youtube.com/@DK2.0");
           break;
         case "7":
-          location.href = "https://www.youtube.com/feed/playlists";
+          openTab("https://www.youtube.com/feed/playlists");
           break;
       }
     });
@@ -84,41 +88,40 @@
 </head>
 <body>
   <div class="container">
-    <a href="https://www.youtube.com/">
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener">
       首頁
       <div class="hint">Press 1</div>
     </a>
 
-    <a href="https://www.youtube.com/feed/subscriptions">
+    <a href="https://www.youtube.com/feed/subscriptions" target="_blank" rel="noopener">
       訂閱
       <div class="hint">Press 2</div>
     </a>
 
-    <a href="https://www.youtube.com/playlist?list=WL">
+    <a href="https://www.youtube.com/playlist?list=WL" target="_blank" rel="noopener">
       稍後觀看
       <div class="hint">Press 3</div>
     </a>
 
-    <a href="https://www.youtube.com/@Torontobigface">
+    <a href="https://www.youtube.com/@Torontobigface" target="_blank" rel="noopener">
       Torontobigface
       <div class="hint">Press 4</div>
     </a>
 
-    <a href="https://www.youtube.com/@laozhou77">
+    <a href="https://www.youtube.com/@laozhou77" target="_blank" rel="noopener">
       laozhou77
       <div class="hint">Press 5</div>
     </a>
 
-    <a href="https://www.youtube.com/@DK2.0">
+    <a href="https://www.youtube.com/@DK2.0" target="_blank" rel="noopener">
       DK2.0
       <div class="hint">Press 6</div>
     </a>
 
-    <a href="https://www.youtube.com/feed/playlists">
+    <a href="https://www.youtube.com/feed/playlists" target="_blank" rel="noopener">
       播放清單
       <div class="hint">Press 7</div>
     </a>
   </div>
 </body>
 </html>
-
